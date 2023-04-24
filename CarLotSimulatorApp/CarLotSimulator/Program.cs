@@ -66,7 +66,15 @@ namespace CarLotSimulator
                 Console.WriteLine($"Engine Noise: {car.EngineNoise}");
                 Console.WriteLine($"Horn Noise: {car.HonkNoise}");
                 Console.WriteLine($"Is it Driveable?: {car.IsDriveable}");
+
+                Console.Write("Rev the engine! > ");
+                car.MakeEngineNoise(car.EngineNoise);
+
+                Console.Write("Honk the horn! > ");
+                car.MakeHonkNoise(car.HonkNoise);
+
                 Console.WriteLine("---------------------------------");
+
             }
             
         }

@@ -34,12 +34,33 @@ namespace CarLotSimulator
 
         public void MakeEngineNoise(string EngineNoise) 
         {
-        
+            if (EngineNoise == "Loud")
+            {
+                Console.WriteLine("VROOOM VROOM!");
+            } 
+            else if(EngineNoise=="Moderate") {
+                Console.WriteLine("Vroom Vroom.");
+            }
+            else 
+            {
+                Console.WriteLine("vroom.");
+            }
         }
 
         public void MakeHonkNoise(string HonkNoise)
         {
-
+            if(HonkNoise=="Intimidating")
+            {
+                Console.WriteLine("HONK HONK!");
+            }
+            else if(HonkNoise=="Funny")
+            {
+                Console.WriteLine("Ring Ring");
+            }
+            else
+            {
+                Console.WriteLine("Beep Beep");
+            }
         }
     }
 }
